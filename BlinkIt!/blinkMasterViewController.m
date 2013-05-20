@@ -7,8 +7,9 @@
 //
 
 #import "blinkMasterViewController.h"
-
 #import "blinkDetailViewController.h"
+#import "blinkHttp.h"
+#import "blinkFriend.h"
 
 @interface blinkMasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -16,11 +17,16 @@
 
 @implementation blinkMasterViewController
 
+@synthesize friendCount = _friendCount;
+@synthesize friendsList = _friendsList;
+@synthesize friendChatList = _friendChatList;
+@synthesize friends = _friends;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Master", @"Master");
+        self.title = NSLocalizedString(@"Friends", @"Friends");
     }
     return self;
 }
@@ -28,11 +34,33 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    
+    if ([self.navigationController.navigationBar respondsToSelector:@selector( setBackgroundImage:forBarMetrics:)]){
+        [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"friends-bg.png"] forBarMetrics:UIBarMetricsDefault];
+    }
+    
+    if([self.tabBarController.tabBar respondsToSelector:@selector(setBackgroundImage:)]){
+        [self.tabBarController.tabBar setBackgroundImage:[UIImage imageNamed:@"tabbar-bg.png"]];
+    }
+    
 
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
+
+    
+    NSString *url = [NSString stringWithFormat:@"%@/listMembers", BASE_URL];
+    [blinkHttp syncGetUrl:url withSelector:@selector(retrievedFriends:) onObject:self];
+}
+
+-(void)retrievedFriends:(NSData*)data
+{
+    parseJSON(_friends, data);
+    
+    NSLog(@"%@, %d", _friends, [_friends count]);
+    
+    
+//    reloadTable(self.tableView, [json count], 0);
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,7 +83,7 @@
     NSError *error = nil;
     if (![context save:&error]) {
          // Replace this implementation with code to handle the error appropriately.
-         // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
+         // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         abort();
     }
@@ -65,13 +93,12 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return [[self.fetchedResultsController sections] count];
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    id <NSFetchedResultsSectionInfo> sectionInfo = [self.fetchedResultsController sections][section];
-    return [sectionInfo numberOfObjects];
+    return [_friends count];
 }
 
 // Customize the appearance of table view cells.
@@ -92,7 +119,7 @@
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
-    return YES;
+    return NO;
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
@@ -119,11 +146,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (!self.detailViewController) {
-        self.detailViewController = [[blinkDetailViewController alloc] initWithNibName:@"blinkDetailViewController" bundle:nil];
-    }
-    NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-    self.detailViewController.detailItem = object;
+    self.detailViewController = nil;
+    self.detailViewController = [[blinkDetailViewController alloc] initWithNibName:@"blinkDetailViewController" bundle:nil];
+    
+    blinkFriend *friend = [[blinkFriend alloc]initWithDictionary:[_friends objectAtIndex:indexPath.row]];
+    
+    self.detailViewController.title = friend.name;
+    [self.detailViewController setPerson:friend];
     [self.navigationController pushViewController:self.detailViewController animated:YES];
 }
 
@@ -228,8 +257,18 @@
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-    NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = [[object valueForKey:@"timeStamp"] description];
+//    ABRecordRef person = CFArrayGetValueAtIndex(_friendsList, indexPath.row );
+//    NSString *name = [NSString stringWithFormat:@"%@ %@",
+//        (__bridge NSString *)(ABRecordCopyValue(person, kABPersonFirstNameProperty)),
+//        (__bridge NSString *)(ABRecordCopyValue(person, kABPersonLastNameProperty))];
+//    NSDictionary *friend = [_friends objectAtIndex:indexPath.row];
+    blinkFriend *friend = [[blinkFriend alloc]initWithDictionary:[_friends objectAtIndex:indexPath.row]];
+
+    UIView *selectedBackgroundView = [[UIView alloc]initWithFrame:cell.bounds];
+    [selectedBackgroundView setBackgroundColor:COLOR_YELLOW];
+    cell.selectedBackgroundView = selectedBackgroundView;
+    
+    cell.textLabel.text = friend.name;
 }
 
 @end

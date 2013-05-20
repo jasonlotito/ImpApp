@@ -14,6 +14,10 @@
 
 @interface blinkMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 
+@property (strong, nonatomic) NSDictionary *friendChatList;
+@property (nonatomic) CFIndex friendCount;
+@property (nonatomic) CFArrayRef friendsList;
+@property (strong, nonatomic) NSArray *friends;
 @property (strong, nonatomic) blinkDetailViewController *detailViewController;
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;

@@ -9,6 +9,7 @@
 #import "blinkAppDelegate.h"
 
 #import "blinkMasterViewController.h"
+#import "blinkLoginController.h"
 
 @implementation blinkAppDelegate
 
@@ -21,10 +22,11 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 
-    blinkMasterViewController *masterViewController = [[blinkMasterViewController alloc] initWithNibName:@"blinkMasterViewController" bundle:nil];
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
-    masterViewController.managedObjectContext = self.managedObjectContext;
-    self.window.rootViewController = self.navigationController;
+    blinkLoginController *loginController = [[blinkLoginController alloc]initWithNibName:@"blinkLoginController" bundle:nil];
+//    self.navigationController = [[UINavigationController alloc] initWithRootViewController:loginController];
+    loginController.managedObjectContext = self.managedObjectContext;
+//    self.window.rootViewController = self.navigationController;
+    self.window.rootViewController = loginController;
     [self.window makeKeyAndVisible];
     return YES;
 }

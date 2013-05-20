@@ -13,3 +13,70 @@
     #import <Foundation/Foundation.h>
     #import <CoreData/CoreData.h>
 #endif
+
+#import "blinkMe.h"
+#import "UIImage+JTColor.h"
+
+#define setCellSelectedBackgroundColor(cell,color) ;; \
+    for(;false;) { \
+        UIView *selectedBackgroundView = [[UIView alloc]initWithFrame:cell.bounds]; \
+        [selectedBackgroundView setBackgroundColor:color]; \
+        cell.selectedBackgroundView = selectedBackgroundView; \
+    }
+
+#define parseJSON(dictionary,data) ;; \
+                                    NSError* error; \
+                                    dictionary = [NSJSONSerialization   \
+                                        JSONObjectWithData:data \
+                                        options:kNilOptions \
+                                        error:&error]; \
+
+#define reloadTable(tableView,count,section) ;; \
+                            NSMutableArray *insertIndexPath = [[NSMutableArray alloc] init]; \
+                            NSIndexPath *newPath = [NSIndexPath indexPathForRow:count inSection:section]; \
+                            [insertIndexPath addObject:newPath]; \
+                            [tableView beginUpdates]; \
+                            [tableView insertRowsAtIndexPaths:insertIndexPath withRowAnimation:UITableViewRowAnimationNone]; \
+                            [tableView endUpdates]; \
+                            [tableView reloadData];
+
+#define BASE_URL @"http://192.168.1.15:12345"
+
+#define COLOR_LOGO_GREEN [UIColor colorWithRed:26/255.0f green:188/255.0f blue:156/255.0f alpha:1.0f]
+#define COLOR_LOGO_GREEN_DARK [UIColor colorWithRed:22/255.0f green:160/255.0f blue:133/255.0f alpha:1.0f]
+
+#define COLOR_LOGO_BLUE [UIColor colorWithRed:52/255.0f green:152/255.0f blue:219/255.0f alpha:1.0f]
+#define COLOR_LOGO_BLUE_DARK  [UIColor colorWithRed:41/255.0f green:128/255.0f blue:185/255.0f alpha:1.0f]
+
+#define COLOR_SEA_GREEN [UIColor colorWithRed:26/255.0f green:188/255.0f blue:156/255.0f alpha:1.0f]
+#define COLOR_SEA_GREEN_DARK  [UIColor colorWithRed:22/255.0f green:160/255.0f blue:133/255.0f alpha:1.0f];
+
+#define COLOR_GREEN [UIColor colorWithRed:224/255.0f green:224/255.0f blue:10/255.0f alpha:1.0f]
+#define COLOR_GREEN_DARK  [UIColor colorWithRed:14/255.0f green:0/255.0f blue:0/255.0f alpha:1.0f]
+
+#define COLOR_BLUE [UIColor colorWithRed:52/255.0f green:152/255.0f blue:219/255.0f alpha:1.0f]
+#define COLOR_BLUE_DARK  [UIColor colorWithRed:41/255.0f green:128/255.0f blue:185/255.0f alpha:1.0f]
+
+#define COLOR_PURPLE [UIColor colorWithRed:155/255.0f green:89/255.0f blue:182/255.0f alpha:1.0f]
+#define COLOR_PURPLE_DARK  [UIColor colorWithRed:142/255.0f green:68/255.0f blue:173/255.0f alpha:1.0f]
+
+#define COLOR_BLACK [UIColor colorWithRed:52/255.0f green:73/255.0f blue:94/255.0f alpha:1.0f]
+#define COLOR_BLACK_DARK  [UIColor colorWithRed:44/255.0f green:62/255.0f blue:80/255.0f alpha:1.0f]
+
+#define COLOR_YELLOW [UIColor colorWithRed:241/255.0f green:196/255.0f blue:15/255.0f alpha:1.0f]
+#define COLOR_YELLOW_DARK [UIColor colorWithRed:243/255.0f green:156/255.0f blue:18/255.0f alpha:1.0f]
+
+#define COLOR_ORANGE   [UIColor colorWithRed:230/255.0f green:126/255.0f blue:34/255.0f alpha:1.0f]
+#define COLOR_ORANGE_DARK [UIColor colorWithRed:211/255.0f green:84/255.0f blue:0/255.0f alpha:1.0f]
+
+#define COLOR_RED [UIColor colorWithRed:231/255.0f green:76/255.0f blue:60/255.0f alpha:1.0f]
+#define COLOR_RED_DARK [UIColor colorWithRed:192/255.0f green:57/255.0f blue:43/255.0f alpha:1.0f]
+
+#define COLOR_WHITE  [UIColor colorWithRed:236/255.0f green:240/255.0f blue:241/255.0f alpha:1.0f];
+#define COLOR_WHITE_DARK [UIColor colorWithRed:189/255.0f green:195/255.0f blue:199/255.0f alpha:1.0f];
+
+#define COLOR_GREY  [UIColor colorWithRed:149/255.0f green:165/255.0f blue:166/255.0f alpha:1.0f];
+#define COLOR_GRAY  [UIColor colorWithRed:149/255.0f green:165/255.0f blue:166/255.0f alpha:1.0f];
+#define COLOR_GREY_DARK  [UIColor colorWithRed:127/255.0f green:140/255.0f blue:141/255.0f alpha:1.0f];
+#define COLOR_GRAY_DARK  [UIColor colorWithRed:127/255.0f green:140/255.0f blue:141/255.0f alpha:1.0f];
+

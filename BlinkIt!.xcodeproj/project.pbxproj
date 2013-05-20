@@ -7,45 +7,133 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C91B64D51749CC5E00603510 /* Avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = C91B64991749CC5D00603510 /* Avatar.png */; };
+		C91B64D61749CC5E00603510 /* Avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C91B649A1749CC5D00603510 /* Avatar@2x.png */; };
+		C91B64D71749CC5E00603510 /* blinkAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C91B649C1749CC5D00603510 /* blinkAppDelegate.m */; };
+		C91B64D81749CC5E00603510 /* blinkChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C91B649E1749CC5D00603510 /* blinkChatCell.m */; };
+		C91B64D91749CC5E00603510 /* blinkChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C91B649F1749CC5D00603510 /* blinkChatCell.xib */; };
+		C91B64DA1749CC5E00603510 /* blinkDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C91B64A11749CC5D00603510 /* blinkDetailViewController.m */; };
+		C91B64DB1749CC5E00603510 /* blinkFriend.m in Sources */ = {isa = PBXBuildFile; fileRef = C91B64A31749CC5D00603510 /* blinkFriend.m */; };
+		C91B64DC1749CC5E00603510 /* blinkHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = C91B64A51749CC5D00603510 /* blinkHttp.m */; };
+		C91B64DD1749CC5E00603510 /* BlinkIt_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C91B64A61749CC5D00603510 /* BlinkIt_.xcdatamodeld */; };
+		C91B64DE1749CC5E00603510 /* BlinkIt!-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C91B64A81749CC5D00603510 /* BlinkIt!-Info.plist */; };
+		C91B64DF1749CC5E00603510 /* blinkLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = C91B64AB1749CC5D00603510 /* blinkLoginController.m */; };
+		C91B64E01749CC5E00603510 /* blinkLoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C91B64AC1749CC5D00603510 /* blinkLoginController.xib */; };
+		C91B64E11749CC5E00603510 /* blinkMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C91B64AE1749CC5D00603510 /* blinkMasterViewController.m */; };
+		C91B64E21749CC5E00603510 /* blinkMe.m in Sources */ = {isa = PBXBuildFile; fileRef = C91B64B01749CC5D00603510 /* blinkMe.m */; };
+		C91B64E31749CC5E00603510 /* blinkMessagesController.m in Sources */ = {isa = PBXBuildFile; fileRef = C91B64B21749CC5D00603510 /* blinkMessagesController.m */; };
+		C91B64E41749CC5E00603510 /* blinkMessagesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C91B64B31749CC5D00603510 /* blinkMessagesController.xib */; };
+		C91B64E51749CC5E00603510 /* blinkNav.m in Sources */ = {isa = PBXBuildFile; fileRef = C91B64B51749CC5D00603510 /* blinkNav.m */; };
+		C91B64E61749CC5E00603510 /* blinkNewMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C91B64B71749CC5D00603510 /* blinkNewMessageCell.m */; };
+		C91B64E71749CC5E00603510 /* blinkNewMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C91B64B81749CC5D00603510 /* blinkNewMessageCell.xib */; };
+		C91B64E81749CC5E00603510 /* blinkNewMessageChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = C91B64BA1749CC5D00603510 /* blinkNewMessageChecker.m */; };
+		C91B64E91749CC5E00603510 /* blinkProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C91B64BC1749CC5E00603510 /* blinkProfileViewController.m */; };
+		C91B64EA1749CC5E00603510 /* blinkProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C91B64BD1749CC5E00603510 /* blinkProfileViewController.storyboard */; };
+		C91B64EB1749CC5E00603510 /* chat-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C91B64BE1749CC5E00603510 /* chat-icon.png */; };
+		C91B64EC1749CC5E00603510 /* Comment-1.png in Resources */ = {isa = PBXBuildFile; fileRef = C91B64BF1749CC5E00603510 /* Comment-1.png */; };
+		C91B64ED1749CC5E00603510 /* Comment-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C91B64C01749CC5E00603510 /* Comment-1@2x.png */; };
+		C91B64EE1749CC5E00603510 /* create-account-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = C91B64C11749CC5E00603510 /* create-account-btn.png */; };
+		C91B64EF1749CC5E00603510 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C91B64C21749CC5E00603510 /* Default-568h@2x.png */; };
+		C91B64F01749CC5E00603510 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C91B64C31749CC5E00603510 /* Default.png */; };
+		C91B64F11749CC5E00603510 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C91B64C41749CC5E00603510 /* Default@2x.png */; };
+		C91B64F21749CC5E00603510 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C91B64C51749CC5E00603510 /* en.lproj */; };
+		C91B64F31749CC5E00603510 /* friends-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C91B64C61749CC5E00603510 /* friends-bg.png */; };
+		C91B64F41749CC5E00603510 /* imp-app-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C91B64C71749CC5E00603510 /* imp-app-icon.png */; };
+		C91B64F51749CC5E00603510 /* imp-app-small.png in Resources */ = {isa = PBXBuildFile; fileRef = C91B64C81749CC5E00603510 /* imp-app-small.png */; };
+		C91B64F61749CC5E00603510 /* imp-logo-iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = C91B64C91749CC5E00603510 /* imp-logo-iphone.png */; };
+		C91B64F71749CC5E00603510 /* imp-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C91B64CA1749CC5E00603510 /* imp-logo.png */; };
+		C91B64F81749CC5E00603510 /* input-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C91B64CB1749CC5E00603510 /* input-bg.png */; };
+		C91B64F91749CC5E00603510 /* jasonlotito.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C91B64CC1749CC5E00603510 /* jasonlotito.jpg */; };
+		C91B64FA1749CC5E00603510 /* login-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = C91B64CD1749CC5E00603510 /* login-btn.png */; };
+		C91B64FB1749CC5E00603510 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C91B64CE1749CC5E00603510 /* main.m */; };
+		C91B64FC1749CC5E00603510 /* messages-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C91B64CF1749CC5E00603510 /* messages-bg.png */; };
+		C91B64FD1749CC5E00603510 /* Social.png in Resources */ = {isa = PBXBuildFile; fileRef = C91B64D01749CC5E00603510 /* Social.png */; };
+		C91B64FE1749CC5E00603510 /* Social@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C91B64D11749CC5E00603510 /* Social@2x.png */; };
+		C91B64FF1749CC5E00603510 /* tabbar-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C91B64D21749CC5E00603510 /* tabbar-bg.png */; };
+		C91B65001749CC5E00603510 /* UIImage+JTColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C91B64D41749CC5E00603510 /* UIImage+JTColor.m */; };
+		C91B65061749CE5A00603510 /* blinkDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C91B65021749CE5A00603510 /* blinkDetailViewController.xib */; };
+		C91B65071749CE5A00603510 /* BlinkIt_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C91B65031749CE5A00603510 /* BlinkIt_.xcdatamodeld */; };
+		C91B65081749CE5A00603510 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C91B65051749CE5A00603510 /* InfoPlist.strings */; };
+		C91B650A1749CEDF00603510 /* blinkMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C91B65091749CEDF00603510 /* blinkMasterViewController.xib */; };
 		C9B5E5941744203D0052F354 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B5E5931744203D0052F354 /* UIKit.framework */; };
 		C9B5E5961744203D0052F354 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B5E5951744203D0052F354 /* Foundation.framework */; };
 		C9B5E5981744203D0052F354 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B5E5971744203D0052F354 /* CoreGraphics.framework */; };
 		C9B5E59A1744203D0052F354 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B5E5991744203D0052F354 /* CoreData.framework */; };
-		C9B5E5A01744203D0052F354 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9B5E59E1744203D0052F354 /* InfoPlist.strings */; };
-		C9B5E5A21744203D0052F354 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B5E5A11744203D0052F354 /* main.m */; };
-		C9B5E5A61744203D0052F354 /* blinkAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B5E5A51744203D0052F354 /* blinkAppDelegate.m */; };
-		C9B5E5A81744203D0052F354 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B5E5A71744203D0052F354 /* Default.png */; };
-		C9B5E5AA1744203D0052F354 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B5E5A91744203D0052F354 /* Default@2x.png */; };
-		C9B5E5AC1744203D0052F354 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9B5E5AB1744203D0052F354 /* Default-568h@2x.png */; };
-		C9B5E5AF1744203D0052F354 /* BlinkIt_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C9B5E5AD1744203D0052F354 /* BlinkIt_.xcdatamodeld */; };
-		C9B5E5B21744203D0052F354 /* blinkMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B5E5B11744203D0052F354 /* blinkMasterViewController.m */; };
-		C9B5E5B51744203D0052F354 /* blinkDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B5E5B41744203D0052F354 /* blinkDetailViewController.m */; };
-		C9B5E5B81744203D0052F354 /* blinkMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9B5E5B61744203D0052F354 /* blinkMasterViewController.xib */; };
-		C9B5E5BB1744203D0052F354 /* blinkDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9B5E5B91744203D0052F354 /* blinkDetailViewController.xib */; };
+		C9B5E5C3174421400052F354 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B5E5C11744213F0052F354 /* AddressBook.framework */; };
+		C9B5E5C4174421400052F354 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B5E5C21744213F0052F354 /* AddressBookUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C91B64991749CC5D00603510 /* Avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Avatar.png; path = "BlinkIt!/Avatar.png"; sourceTree = "<group>"; };
+		C91B649A1749CC5D00603510 /* Avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Avatar@2x.png"; path = "BlinkIt!/Avatar@2x.png"; sourceTree = "<group>"; };
+		C91B649B1749CC5D00603510 /* blinkAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blinkAppDelegate.h; path = "BlinkIt!/blinkAppDelegate.h"; sourceTree = "<group>"; };
+		C91B649C1749CC5D00603510 /* blinkAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = blinkAppDelegate.m; path = "BlinkIt!/blinkAppDelegate.m"; sourceTree = "<group>"; };
+		C91B649D1749CC5D00603510 /* blinkChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blinkChatCell.h; path = "BlinkIt!/blinkChatCell.h"; sourceTree = "<group>"; };
+		C91B649E1749CC5D00603510 /* blinkChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = blinkChatCell.m; path = "BlinkIt!/blinkChatCell.m"; sourceTree = "<group>"; };
+		C91B649F1749CC5D00603510 /* blinkChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = blinkChatCell.xib; path = "BlinkIt!/blinkChatCell.xib"; sourceTree = "<group>"; };
+		C91B64A01749CC5D00603510 /* blinkDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blinkDetailViewController.h; path = "BlinkIt!/blinkDetailViewController.h"; sourceTree = "<group>"; };
+		C91B64A11749CC5D00603510 /* blinkDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = blinkDetailViewController.m; path = "BlinkIt!/blinkDetailViewController.m"; sourceTree = "<group>"; };
+		C91B64A21749CC5D00603510 /* blinkFriend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blinkFriend.h; path = "BlinkIt!/blinkFriend.h"; sourceTree = "<group>"; };
+		C91B64A31749CC5D00603510 /* blinkFriend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = blinkFriend.m; path = "BlinkIt!/blinkFriend.m"; sourceTree = "<group>"; };
+		C91B64A41749CC5D00603510 /* blinkHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blinkHttp.h; path = "BlinkIt!/blinkHttp.h"; sourceTree = "<group>"; };
+		C91B64A51749CC5D00603510 /* blinkHttp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = blinkHttp.m; path = "BlinkIt!/blinkHttp.m"; sourceTree = "<group>"; };
+		C91B64A71749CC5D00603510 /* BlinkIt_.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BlinkIt_.xcdatamodel; sourceTree = "<group>"; };
+		C91B64A81749CC5D00603510 /* BlinkIt!-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "BlinkIt!-Info.plist"; path = "BlinkIt!/BlinkIt!-Info.plist"; sourceTree = "<group>"; };
+		C91B64A91749CC5D00603510 /* BlinkIt!-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BlinkIt!-Prefix.pch"; path = "BlinkIt!/BlinkIt!-Prefix.pch"; sourceTree = "<group>"; };
+		C91B64AA1749CC5D00603510 /* blinkLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blinkLoginController.h; path = "BlinkIt!/blinkLoginController.h"; sourceTree = "<group>"; };
+		C91B64AB1749CC5D00603510 /* blinkLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = blinkLoginController.m; path = "BlinkIt!/blinkLoginController.m"; sourceTree = "<group>"; };
+		C91B64AC1749CC5D00603510 /* blinkLoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = blinkLoginController.xib; path = "BlinkIt!/blinkLoginController.xib"; sourceTree = "<group>"; };
+		C91B64AD1749CC5D00603510 /* blinkMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blinkMasterViewController.h; path = "BlinkIt!/blinkMasterViewController.h"; sourceTree = "<group>"; };
+		C91B64AE1749CC5D00603510 /* blinkMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = blinkMasterViewController.m; path = "BlinkIt!/blinkMasterViewController.m"; sourceTree = "<group>"; };
+		C91B64AF1749CC5D00603510 /* blinkMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blinkMe.h; path = "BlinkIt!/blinkMe.h"; sourceTree = "<group>"; };
+		C91B64B01749CC5D00603510 /* blinkMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = blinkMe.m; path = "BlinkIt!/blinkMe.m"; sourceTree = "<group>"; };
+		C91B64B11749CC5D00603510 /* blinkMessagesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blinkMessagesController.h; path = "BlinkIt!/blinkMessagesController.h"; sourceTree = "<group>"; };
+		C91B64B21749CC5D00603510 /* blinkMessagesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = blinkMessagesController.m; path = "BlinkIt!/blinkMessagesController.m"; sourceTree = "<group>"; };
+		C91B64B31749CC5D00603510 /* blinkMessagesController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = blinkMessagesController.xib; path = "BlinkIt!/blinkMessagesController.xib"; sourceTree = "<group>"; };
+		C91B64B41749CC5D00603510 /* blinkNav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blinkNav.h; path = "BlinkIt!/blinkNav.h"; sourceTree = "<group>"; };
+		C91B64B51749CC5D00603510 /* blinkNav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = blinkNav.m; path = "BlinkIt!/blinkNav.m"; sourceTree = "<group>"; };
+		C91B64B61749CC5D00603510 /* blinkNewMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blinkNewMessageCell.h; path = "BlinkIt!/blinkNewMessageCell.h"; sourceTree = "<group>"; };
+		C91B64B71749CC5D00603510 /* blinkNewMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = blinkNewMessageCell.m; path = "BlinkIt!/blinkNewMessageCell.m"; sourceTree = "<group>"; };
+		C91B64B81749CC5D00603510 /* blinkNewMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = blinkNewMessageCell.xib; path = "BlinkIt!/blinkNewMessageCell.xib"; sourceTree = "<group>"; };
+		C91B64B91749CC5D00603510 /* blinkNewMessageChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blinkNewMessageChecker.h; path = "BlinkIt!/blinkNewMessageChecker.h"; sourceTree = "<group>"; };
+		C91B64BA1749CC5D00603510 /* blinkNewMessageChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = blinkNewMessageChecker.m; path = "BlinkIt!/blinkNewMessageChecker.m"; sourceTree = "<group>"; };
+		C91B64BB1749CC5D00603510 /* blinkProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blinkProfileViewController.h; path = "BlinkIt!/blinkProfileViewController.h"; sourceTree = "<group>"; };
+		C91B64BC1749CC5E00603510 /* blinkProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = blinkProfileViewController.m; path = "BlinkIt!/blinkProfileViewController.m"; sourceTree = "<group>"; };
+		C91B64BD1749CC5E00603510 /* blinkProfileViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = blinkProfileViewController.storyboard; path = "BlinkIt!/blinkProfileViewController.storyboard"; sourceTree = "<group>"; };
+		C91B64BE1749CC5E00603510 /* chat-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chat-icon.png"; path = "BlinkIt!/chat-icon.png"; sourceTree = "<group>"; };
+		C91B64BF1749CC5E00603510 /* Comment-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Comment-1.png"; path = "BlinkIt!/Comment-1.png"; sourceTree = "<group>"; };
+		C91B64C01749CC5E00603510 /* Comment-1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Comment-1@2x.png"; path = "BlinkIt!/Comment-1@2x.png"; sourceTree = "<group>"; };
+		C91B64C11749CC5E00603510 /* create-account-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "create-account-btn.png"; path = "BlinkIt!/create-account-btn.png"; sourceTree = "<group>"; };
+		C91B64C21749CC5E00603510 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "BlinkIt!/Default-568h@2x.png"; sourceTree = "<group>"; };
+		C91B64C31749CC5E00603510 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "BlinkIt!/Default.png"; sourceTree = "<group>"; };
+		C91B64C41749CC5E00603510 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "BlinkIt!/Default@2x.png"; sourceTree = "<group>"; };
+		C91B64C51749CC5E00603510 /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = en.lproj; path = "BlinkIt!/en.lproj"; sourceTree = "<group>"; };
+		C91B64C61749CC5E00603510 /* friends-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "friends-bg.png"; path = "BlinkIt!/friends-bg.png"; sourceTree = "<group>"; };
+		C91B64C71749CC5E00603510 /* imp-app-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "imp-app-icon.png"; path = "BlinkIt!/imp-app-icon.png"; sourceTree = "<group>"; };
+		C91B64C81749CC5E00603510 /* imp-app-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "imp-app-small.png"; path = "BlinkIt!/imp-app-small.png"; sourceTree = "<group>"; };
+		C91B64C91749CC5E00603510 /* imp-logo-iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "imp-logo-iphone.png"; path = "BlinkIt!/imp-logo-iphone.png"; sourceTree = "<group>"; };
+		C91B64CA1749CC5E00603510 /* imp-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "imp-logo.png"; path = "BlinkIt!/imp-logo.png"; sourceTree = "<group>"; };
+		C91B64CB1749CC5E00603510 /* input-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "input-bg.png"; path = "BlinkIt!/input-bg.png"; sourceTree = "<group>"; };
+		C91B64CC1749CC5E00603510 /* jasonlotito.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jasonlotito.jpg; path = "BlinkIt!/jasonlotito.jpg"; sourceTree = "<group>"; };
+		C91B64CD1749CC5E00603510 /* login-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "login-btn.png"; path = "BlinkIt!/login-btn.png"; sourceTree = "<group>"; };
+		C91B64CE1749CC5E00603510 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "BlinkIt!/main.m"; sourceTree = "<group>"; };
+		C91B64CF1749CC5E00603510 /* messages-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "messages-bg.png"; path = "BlinkIt!/messages-bg.png"; sourceTree = "<group>"; };
+		C91B64D01749CC5E00603510 /* Social.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Social.png; path = "BlinkIt!/Social.png"; sourceTree = "<group>"; };
+		C91B64D11749CC5E00603510 /* Social@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Social@2x.png"; path = "BlinkIt!/Social@2x.png"; sourceTree = "<group>"; };
+		C91B64D21749CC5E00603510 /* tabbar-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-bg.png"; path = "BlinkIt!/tabbar-bg.png"; sourceTree = "<group>"; };
+		C91B64D31749CC5E00603510 /* UIImage+JTColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+JTColor.h"; path = "BlinkIt!/UIImage+JTColor.h"; sourceTree = "<group>"; };
+		C91B64D41749CC5E00603510 /* UIImage+JTColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+JTColor.m"; path = "BlinkIt!/UIImage+JTColor.m"; sourceTree = "<group>"; };
+		C91B65021749CE5A00603510 /* blinkDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = blinkDetailViewController.xib; path = "BlinkIt!/blinkDetailViewController.xib"; sourceTree = "<group>"; };
+		C91B65041749CE5A00603510 /* BlinkIt_.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BlinkIt_.xcdatamodel; sourceTree = "<group>"; };
+		C91B65051749CE5A00603510 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = "BlinkIt!/InfoPlist.strings"; sourceTree = "<group>"; };
+		C91B65091749CEDF00603510 /* blinkMasterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = blinkMasterViewController.xib; path = "BlinkIt!/blinkMasterViewController.xib"; sourceTree = "<group>"; };
 		C9B5E5901744203D0052F354 /* BlinkIt!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlinkIt!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B5E5931744203D0052F354 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C9B5E5951744203D0052F354 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C9B5E5971744203D0052F354 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C9B5E5991744203D0052F354 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		C9B5E59D1744203D0052F354 /* BlinkIt!-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlinkIt!-Info.plist"; sourceTree = "<group>"; };
-		C9B5E59F1744203D0052F354 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C9B5E5A11744203D0052F354 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C9B5E5A31744203D0052F354 /* BlinkIt!-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlinkIt!-Prefix.pch"; sourceTree = "<group>"; };
-		C9B5E5A41744203D0052F354 /* blinkAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blinkAppDelegate.h; sourceTree = "<group>"; };
-		C9B5E5A51744203D0052F354 /* blinkAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = blinkAppDelegate.m; sourceTree = "<group>"; };
-		C9B5E5A71744203D0052F354 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		C9B5E5A91744203D0052F354 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		C9B5E5AB1744203D0052F354 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		C9B5E5AE1744203D0052F354 /* BlinkIt_.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BlinkIt_.xcdatamodel; sourceTree = "<group>"; };
-		C9B5E5B01744203D0052F354 /* blinkMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blinkMasterViewController.h; sourceTree = "<group>"; };
-		C9B5E5B11744203D0052F354 /* blinkMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = blinkMasterViewController.m; sourceTree = "<group>"; };
-		C9B5E5B31744203D0052F354 /* blinkDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blinkDetailViewController.h; sourceTree = "<group>"; };
-		C9B5E5B41744203D0052F354 /* blinkDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = blinkDetailViewController.m; sourceTree = "<group>"; };
-		C9B5E5B71744203D0052F354 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/blinkMasterViewController.xib; sourceTree = "<group>"; };
-		C9B5E5BA1744203D0052F354 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/blinkDetailViewController.xib; sourceTree = "<group>"; };
+		C9B5E5C11744213F0052F354 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		C9B5E5C21744213F0052F354 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +141,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9B5E5C3174421400052F354 /* AddressBook.framework in Frameworks */,
+				C9B5E5C4174421400052F354 /* AddressBookUI.framework in Frameworks */,
 				C9B5E5941744203D0052F354 /* UIKit.framework in Frameworks */,
 				C9B5E5961744203D0052F354 /* Foundation.framework in Frameworks */,
 				C9B5E5981744203D0052F354 /* CoreGraphics.framework in Frameworks */,
@@ -63,10 +153,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C91B65011749CC8200603510 /* BlinkIt */ = {
+			isa = PBXGroup;
+			children = (
+				C91B64991749CC5D00603510 /* Avatar.png */,
+				C91B649A1749CC5D00603510 /* Avatar@2x.png */,
+				C91B649B1749CC5D00603510 /* blinkAppDelegate.h */,
+				C91B649C1749CC5D00603510 /* blinkAppDelegate.m */,
+				C91B649D1749CC5D00603510 /* blinkChatCell.h */,
+				C91B649E1749CC5D00603510 /* blinkChatCell.m */,
+				C91B649F1749CC5D00603510 /* blinkChatCell.xib */,
+				C91B64A01749CC5D00603510 /* blinkDetailViewController.h */,
+				C91B64A11749CC5D00603510 /* blinkDetailViewController.m */,
+				C91B65021749CE5A00603510 /* blinkDetailViewController.xib */,
+				C91B64A21749CC5D00603510 /* blinkFriend.h */,
+				C91B64A31749CC5D00603510 /* blinkFriend.m */,
+				C91B64A41749CC5D00603510 /* blinkHttp.h */,
+				C91B64A51749CC5D00603510 /* blinkHttp.m */,
+				C91B64A81749CC5D00603510 /* BlinkIt!-Info.plist */,
+				C91B64A91749CC5D00603510 /* BlinkIt!-Prefix.pch */,
+				C91B65031749CE5A00603510 /* BlinkIt_.xcdatamodeld */,
+				C91B64A61749CC5D00603510 /* BlinkIt_.xcdatamodeld */,
+				C91B64AA1749CC5D00603510 /* blinkLoginController.h */,
+				C91B64AB1749CC5D00603510 /* blinkLoginController.m */,
+				C91B64AC1749CC5D00603510 /* blinkLoginController.xib */,
+				C91B64AD1749CC5D00603510 /* blinkMasterViewController.h */,
+				C91B64AE1749CC5D00603510 /* blinkMasterViewController.m */,
+				C91B65091749CEDF00603510 /* blinkMasterViewController.xib */,
+				C91B64AF1749CC5D00603510 /* blinkMe.h */,
+				C91B64B01749CC5D00603510 /* blinkMe.m */,
+				C91B64B11749CC5D00603510 /* blinkMessagesController.h */,
+				C91B64B21749CC5D00603510 /* blinkMessagesController.m */,
+				C91B64B31749CC5D00603510 /* blinkMessagesController.xib */,
+				C91B64B41749CC5D00603510 /* blinkNav.h */,
+				C91B64B51749CC5D00603510 /* blinkNav.m */,
+				C91B64B61749CC5D00603510 /* blinkNewMessageCell.h */,
+				C91B64B71749CC5D00603510 /* blinkNewMessageCell.m */,
+				C91B64B81749CC5D00603510 /* blinkNewMessageCell.xib */,
+				C91B64B91749CC5D00603510 /* blinkNewMessageChecker.h */,
+				C91B64BA1749CC5D00603510 /* blinkNewMessageChecker.m */,
+				C91B64BB1749CC5D00603510 /* blinkProfileViewController.h */,
+				C91B64BC1749CC5E00603510 /* blinkProfileViewController.m */,
+				C91B64BD1749CC5E00603510 /* blinkProfileViewController.storyboard */,
+				C91B64BE1749CC5E00603510 /* chat-icon.png */,
+				C91B64BF1749CC5E00603510 /* Comment-1.png */,
+				C91B64C01749CC5E00603510 /* Comment-1@2x.png */,
+				C91B64C11749CC5E00603510 /* create-account-btn.png */,
+				C91B64C21749CC5E00603510 /* Default-568h@2x.png */,
+				C91B64C31749CC5E00603510 /* Default.png */,
+				C91B64C41749CC5E00603510 /* Default@2x.png */,
+				C91B64C51749CC5E00603510 /* en.lproj */,
+				C91B64C61749CC5E00603510 /* friends-bg.png */,
+				C91B64C71749CC5E00603510 /* imp-app-icon.png */,
+				C91B64C81749CC5E00603510 /* imp-app-small.png */,
+				C91B64C91749CC5E00603510 /* imp-logo-iphone.png */,
+				C91B64CA1749CC5E00603510 /* imp-logo.png */,
+				C91B65051749CE5A00603510 /* InfoPlist.strings */,
+				C91B64CB1749CC5E00603510 /* input-bg.png */,
+				C91B64CC1749CC5E00603510 /* jasonlotito.jpg */,
+				C91B64CD1749CC5E00603510 /* login-btn.png */,
+				C91B64CE1749CC5E00603510 /* main.m */,
+				C91B64CF1749CC5E00603510 /* messages-bg.png */,
+				C91B64D01749CC5E00603510 /* Social.png */,
+				C91B64D11749CC5E00603510 /* Social@2x.png */,
+				C91B64D21749CC5E00603510 /* tabbar-bg.png */,
+				C91B64D31749CC5E00603510 /* UIImage+JTColor.h */,
+				C91B64D41749CC5E00603510 /* UIImage+JTColor.m */,
+			);
+			name = BlinkIt;
+			sourceTree = "<group>";
+		};
 		C9B5E5871744203D0052F354 = {
 			isa = PBXGroup;
 			children = (
-				C9B5E59B1744203D0052F354 /* BlinkIt! */,
+				C91B65011749CC8200603510 /* BlinkIt */,
+				C9B5E5C11744213F0052F354 /* AddressBook.framework */,
+				C9B5E5C21744213F0052F354 /* AddressBookUI.framework */,
 				C9B5E5921744203D0052F354 /* Frameworks */,
 				C9B5E5911744203D0052F354 /* Products */,
 			);
@@ -89,37 +251,6 @@
 				C9B5E5991744203D0052F354 /* CoreData.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C9B5E59B1744203D0052F354 /* BlinkIt! */ = {
-			isa = PBXGroup;
-			children = (
-				C9B5E5A41744203D0052F354 /* blinkAppDelegate.h */,
-				C9B5E5A51744203D0052F354 /* blinkAppDelegate.m */,
-				C9B5E5B01744203D0052F354 /* blinkMasterViewController.h */,
-				C9B5E5B11744203D0052F354 /* blinkMasterViewController.m */,
-				C9B5E5B31744203D0052F354 /* blinkDetailViewController.h */,
-				C9B5E5B41744203D0052F354 /* blinkDetailViewController.m */,
-				C9B5E5B61744203D0052F354 /* blinkMasterViewController.xib */,
-				C9B5E5B91744203D0052F354 /* blinkDetailViewController.xib */,
-				C9B5E5AD1744203D0052F354 /* BlinkIt_.xcdatamodeld */,
-				C9B5E59C1744203D0052F354 /* Supporting Files */,
-			);
-			path = "BlinkIt!";
-			sourceTree = "<group>";
-		};
-		C9B5E59C1744203D0052F354 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C9B5E59D1744203D0052F354 /* BlinkIt!-Info.plist */,
-				C9B5E59E1744203D0052F354 /* InfoPlist.strings */,
-				C9B5E5A11744203D0052F354 /* main.m */,
-				C9B5E5A31744203D0052F354 /* BlinkIt!-Prefix.pch */,
-				C9B5E5A71744203D0052F354 /* Default.png */,
-				C9B5E5A91744203D0052F354 /* Default@2x.png */,
-				C9B5E5AB1744203D0052F354 /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,12 +305,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9B5E5A01744203D0052F354 /* InfoPlist.strings in Resources */,
-				C9B5E5A81744203D0052F354 /* Default.png in Resources */,
-				C9B5E5AA1744203D0052F354 /* Default@2x.png in Resources */,
-				C9B5E5AC1744203D0052F354 /* Default-568h@2x.png in Resources */,
-				C9B5E5B81744203D0052F354 /* blinkMasterViewController.xib in Resources */,
-				C9B5E5BB1744203D0052F354 /* blinkDetailViewController.xib in Resources */,
+				C91B64D51749CC5E00603510 /* Avatar.png in Resources */,
+				C91B64D61749CC5E00603510 /* Avatar@2x.png in Resources */,
+				C91B64D91749CC5E00603510 /* blinkChatCell.xib in Resources */,
+				C91B64DE1749CC5E00603510 /* BlinkIt!-Info.plist in Resources */,
+				C91B64E01749CC5E00603510 /* blinkLoginController.xib in Resources */,
+				C91B64E41749CC5E00603510 /* blinkMessagesController.xib in Resources */,
+				C91B64E71749CC5E00603510 /* blinkNewMessageCell.xib in Resources */,
+				C91B64EA1749CC5E00603510 /* blinkProfileViewController.storyboard in Resources */,
+				C91B64EB1749CC5E00603510 /* chat-icon.png in Resources */,
+				C91B64EC1749CC5E00603510 /* Comment-1.png in Resources */,
+				C91B64ED1749CC5E00603510 /* Comment-1@2x.png in Resources */,
+				C91B64EE1749CC5E00603510 /* create-account-btn.png in Resources */,
+				C91B64EF1749CC5E00603510 /* Default-568h@2x.png in Resources */,
+				C91B64F01749CC5E00603510 /* Default.png in Resources */,
+				C91B64F11749CC5E00603510 /* Default@2x.png in Resources */,
+				C91B64F21749CC5E00603510 /* en.lproj in Resources */,
+				C91B64F31749CC5E00603510 /* friends-bg.png in Resources */,
+				C91B64F41749CC5E00603510 /* imp-app-icon.png in Resources */,
+				C91B64F51749CC5E00603510 /* imp-app-small.png in Resources */,
+				C91B64F61749CC5E00603510 /* imp-logo-iphone.png in Resources */,
+				C91B64F71749CC5E00603510 /* imp-logo.png in Resources */,
+				C91B64F81749CC5E00603510 /* input-bg.png in Resources */,
+				C91B64F91749CC5E00603510 /* jasonlotito.jpg in Resources */,
+				C91B64FA1749CC5E00603510 /* login-btn.png in Resources */,
+				C91B64FC1749CC5E00603510 /* messages-bg.png in Resources */,
+				C91B64FD1749CC5E00603510 /* Social.png in Resources */,
+				C91B64FE1749CC5E00603510 /* Social@2x.png in Resources */,
+				C91B64FF1749CC5E00603510 /* tabbar-bg.png in Resources */,
+				C91B65061749CE5A00603510 /* blinkDetailViewController.xib in Resources */,
+				C91B65081749CE5A00603510 /* InfoPlist.strings in Resources */,
+				C91B650A1749CEDF00603510 /* blinkMasterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,42 +346,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9B5E5A21744203D0052F354 /* main.m in Sources */,
-				C9B5E5A61744203D0052F354 /* blinkAppDelegate.m in Sources */,
-				C9B5E5AF1744203D0052F354 /* BlinkIt_.xcdatamodeld in Sources */,
-				C9B5E5B21744203D0052F354 /* blinkMasterViewController.m in Sources */,
-				C9B5E5B51744203D0052F354 /* blinkDetailViewController.m in Sources */,
+				C91B64D71749CC5E00603510 /* blinkAppDelegate.m in Sources */,
+				C91B64D81749CC5E00603510 /* blinkChatCell.m in Sources */,
+				C91B64DA1749CC5E00603510 /* blinkDetailViewController.m in Sources */,
+				C91B64DB1749CC5E00603510 /* blinkFriend.m in Sources */,
+				C91B64DC1749CC5E00603510 /* blinkHttp.m in Sources */,
+				C91B64DD1749CC5E00603510 /* BlinkIt_.xcdatamodeld in Sources */,
+				C91B64DF1749CC5E00603510 /* blinkLoginController.m in Sources */,
+				C91B64E11749CC5E00603510 /* blinkMasterViewController.m in Sources */,
+				C91B64E21749CC5E00603510 /* blinkMe.m in Sources */,
+				C91B64E31749CC5E00603510 /* blinkMessagesController.m in Sources */,
+				C91B64E51749CC5E00603510 /* blinkNav.m in Sources */,
+				C91B64E61749CC5E00603510 /* blinkNewMessageCell.m in Sources */,
+				C91B64E81749CC5E00603510 /* blinkNewMessageChecker.m in Sources */,
+				C91B64E91749CC5E00603510 /* blinkProfileViewController.m in Sources */,
+				C91B64FB1749CC5E00603510 /* main.m in Sources */,
+				C91B65001749CC5E00603510 /* UIImage+JTColor.m in Sources */,
+				C91B65071749CE5A00603510 /* BlinkIt_.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		C9B5E59E1744203D0052F354 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9B5E59F1744203D0052F354 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		C9B5E5B61744203D0052F354 /* blinkMasterViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9B5E5B71744203D0052F354 /* en */,
-			);
-			name = blinkMasterViewController.xib;
-			sourceTree = "<group>";
-		};
-		C9B5E5B91744203D0052F354 /* blinkDetailViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9B5E5BA1744203D0052F354 /* en */,
-			);
-			name = blinkDetailViewController.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C9B5E5BC1744203D0052F354 /* Debug */ = {
@@ -240,6 +381,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jason Lotito (G8WTHAZ3PU)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -255,6 +397,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "A0A59FE3-BFAB-4FBF-9934-DF5A59C4AD3D";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -271,6 +414,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jason Lotito (G8WTHAZ3PU)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -279,6 +423,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "A0A59FE3-BFAB-4FBF-9934-DF5A59C4AD3D";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -290,6 +435,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BlinkIt!/BlinkIt!-Prefix.pch";
 				INFOPLIST_FILE = "BlinkIt!/BlinkIt!-Info.plist";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -325,17 +471,30 @@
 				C9B5E5C01744203D0052F354 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		C9B5E5AD1744203D0052F354 /* BlinkIt_.xcdatamodeld */ = {
+		C91B64A61749CC5D00603510 /* BlinkIt_.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				C9B5E5AE1744203D0052F354 /* BlinkIt_.xcdatamodel */,
+				C91B64A71749CC5D00603510 /* BlinkIt_.xcdatamodel */,
 			);
-			currentVersion = C9B5E5AE1744203D0052F354 /* BlinkIt_.xcdatamodel */;
-			path = BlinkIt_.xcdatamodeld;
+			currentVersion = C91B64A71749CC5D00603510 /* BlinkIt_.xcdatamodel */;
+			name = BlinkIt_.xcdatamodeld;
+			path = "BlinkIt!/BlinkIt_.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		C91B65031749CE5A00603510 /* BlinkIt_.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C91B65041749CE5A00603510 /* BlinkIt_.xcdatamodel */,
+			);
+			currentVersion = C91B65041749CE5A00603510 /* BlinkIt_.xcdatamodel */;
+			name = BlinkIt_.xcdatamodeld;
+			path = "BlinkIt!/BlinkIt_.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
