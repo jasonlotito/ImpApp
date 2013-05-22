@@ -156,45 +156,94 @@
 		C91B65011749CC8200603510 /* BlinkIt */ = {
 			isa = PBXGroup;
 			children = (
-				C91B64991749CC5D00603510 /* Avatar.png */,
-				C91B649A1749CC5D00603510 /* Avatar@2x.png */,
+				C91B64A81749CC5D00603510 /* BlinkIt!-Info.plist */,
 				C91B649B1749CC5D00603510 /* blinkAppDelegate.h */,
+				C91B64C51749CC5E00603510 /* en.lproj */,
 				C91B649C1749CC5D00603510 /* blinkAppDelegate.m */,
-				C91B649D1749CC5D00603510 /* blinkChatCell.h */,
-				C91B649E1749CC5D00603510 /* blinkChatCell.m */,
-				C91B649F1749CC5D00603510 /* blinkChatCell.xib */,
+				C91B64CE1749CC5E00603510 /* main.m */,
+				C94BD514174A66B60060062E /* Categories */,
+				C94BD50F174A66240060062E /* Controllers */,
+				C94BD515174A66E80060062E /* Core Data */,
+				C94BD511174A66520060062E /* Helpers */,
+				C94BD513174A66800060062E /* Images */,
+				C94BD512174A66590060062E /* Models */,
+				C94BD516174A66FC0060062E /* Resources */,
+				C94BD510174A663D0060062E /* UI */,
+			);
+			name = BlinkIt;
+			sourceTree = "<group>";
+		};
+		C94BD50F174A66240060062E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				C91B64A01749CC5D00603510 /* blinkDetailViewController.h */,
 				C91B64A11749CC5D00603510 /* blinkDetailViewController.m */,
 				C91B65021749CE5A00603510 /* blinkDetailViewController.xib */,
-				C91B64A21749CC5D00603510 /* blinkFriend.h */,
-				C91B64A31749CC5D00603510 /* blinkFriend.m */,
-				C91B64A41749CC5D00603510 /* blinkHttp.h */,
-				C91B64A51749CC5D00603510 /* blinkHttp.m */,
-				C91B64A81749CC5D00603510 /* BlinkIt!-Info.plist */,
-				C91B64A91749CC5D00603510 /* BlinkIt!-Prefix.pch */,
-				C91B65031749CE5A00603510 /* BlinkIt_.xcdatamodeld */,
-				C91B64A61749CC5D00603510 /* BlinkIt_.xcdatamodeld */,
+				C91B64B11749CC5D00603510 /* blinkMessagesController.h */,
+				C91B64B21749CC5D00603510 /* blinkMessagesController.m */,
+				C91B64B31749CC5D00603510 /* blinkMessagesController.xib */,
+				C91B64BB1749CC5D00603510 /* blinkProfileViewController.h */,
+				C91B64BC1749CC5E00603510 /* blinkProfileViewController.m */,
+				C91B64BD1749CC5E00603510 /* blinkProfileViewController.storyboard */,
 				C91B64AA1749CC5D00603510 /* blinkLoginController.h */,
 				C91B64AB1749CC5D00603510 /* blinkLoginController.m */,
 				C91B64AC1749CC5D00603510 /* blinkLoginController.xib */,
 				C91B64AD1749CC5D00603510 /* blinkMasterViewController.h */,
 				C91B64AE1749CC5D00603510 /* blinkMasterViewController.m */,
 				C91B65091749CEDF00603510 /* blinkMasterViewController.xib */,
-				C91B64AF1749CC5D00603510 /* blinkMe.h */,
-				C91B64B01749CC5D00603510 /* blinkMe.m */,
-				C91B64B11749CC5D00603510 /* blinkMessagesController.h */,
-				C91B64B21749CC5D00603510 /* blinkMessagesController.m */,
-				C91B64B31749CC5D00603510 /* blinkMessagesController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C94BD510174A663D0060062E /* UI */ = {
+			isa = PBXGroup;
+			children = (
 				C91B64B41749CC5D00603510 /* blinkNav.h */,
 				C91B64B51749CC5D00603510 /* blinkNav.m */,
 				C91B64B61749CC5D00603510 /* blinkNewMessageCell.h */,
 				C91B64B71749CC5D00603510 /* blinkNewMessageCell.m */,
 				C91B64B81749CC5D00603510 /* blinkNewMessageCell.xib */,
+				C91B649D1749CC5D00603510 /* blinkChatCell.h */,
+				C91B649E1749CC5D00603510 /* blinkChatCell.m */,
+				C91B649F1749CC5D00603510 /* blinkChatCell.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		C94BD511174A66520060062E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C91B64A41749CC5D00603510 /* blinkHttp.h */,
+				C91B64A51749CC5D00603510 /* blinkHttp.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		C94BD512174A66590060062E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C91B64A21749CC5D00603510 /* blinkFriend.h */,
+				C91B64AF1749CC5D00603510 /* blinkMe.h */,
 				C91B64B91749CC5D00603510 /* blinkNewMessageChecker.h */,
+				C91B64A31749CC5D00603510 /* blinkFriend.m */,
+				C91B64B01749CC5D00603510 /* blinkMe.m */,
 				C91B64BA1749CC5D00603510 /* blinkNewMessageChecker.m */,
-				C91B64BB1749CC5D00603510 /* blinkProfileViewController.h */,
-				C91B64BC1749CC5E00603510 /* blinkProfileViewController.m */,
-				C91B64BD1749CC5E00603510 /* blinkProfileViewController.storyboard */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C94BD513174A66800060062E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C91B64991749CC5D00603510 /* Avatar.png */,
+				C91B649A1749CC5D00603510 /* Avatar@2x.png */,
+				C91B64CB1749CC5E00603510 /* input-bg.png */,
+				C91B64CC1749CC5E00603510 /* jasonlotito.jpg */,
+				C91B64CD1749CC5E00603510 /* login-btn.png */,
+				C91B64CF1749CC5E00603510 /* messages-bg.png */,
+				C91B64D01749CC5E00603510 /* Social.png */,
+				C91B64D11749CC5E00603510 /* Social@2x.png */,
+				C91B64D21749CC5E00603510 /* tabbar-bg.png */,
 				C91B64BE1749CC5E00603510 /* chat-icon.png */,
 				C91B64BF1749CC5E00603510 /* Comment-1.png */,
 				C91B64C01749CC5E00603510 /* Comment-1@2x.png */,
@@ -202,25 +251,40 @@
 				C91B64C21749CC5E00603510 /* Default-568h@2x.png */,
 				C91B64C31749CC5E00603510 /* Default.png */,
 				C91B64C41749CC5E00603510 /* Default@2x.png */,
-				C91B64C51749CC5E00603510 /* en.lproj */,
 				C91B64C61749CC5E00603510 /* friends-bg.png */,
 				C91B64C71749CC5E00603510 /* imp-app-icon.png */,
 				C91B64C81749CC5E00603510 /* imp-app-small.png */,
 				C91B64C91749CC5E00603510 /* imp-logo-iphone.png */,
 				C91B64CA1749CC5E00603510 /* imp-logo.png */,
-				C91B65051749CE5A00603510 /* InfoPlist.strings */,
-				C91B64CB1749CC5E00603510 /* input-bg.png */,
-				C91B64CC1749CC5E00603510 /* jasonlotito.jpg */,
-				C91B64CD1749CC5E00603510 /* login-btn.png */,
-				C91B64CE1749CC5E00603510 /* main.m */,
-				C91B64CF1749CC5E00603510 /* messages-bg.png */,
-				C91B64D01749CC5E00603510 /* Social.png */,
-				C91B64D11749CC5E00603510 /* Social@2x.png */,
-				C91B64D21749CC5E00603510 /* tabbar-bg.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		C94BD514174A66B60060062E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
 				C91B64D31749CC5E00603510 /* UIImage+JTColor.h */,
 				C91B64D41749CC5E00603510 /* UIImage+JTColor.m */,
 			);
-			name = BlinkIt;
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		C94BD515174A66E80060062E /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				C91B65031749CE5A00603510 /* BlinkIt_.xcdatamodeld */,
+				C91B64A61749CC5D00603510 /* BlinkIt_.xcdatamodeld */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		C94BD516174A66FC0060062E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C91B64A91749CC5D00603510 /* BlinkIt!-Prefix.pch */,
+				C91B65051749CE5A00603510 /* InfoPlist.strings */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		C9B5E5871744203D0052F354 = {
@@ -382,7 +446,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Jason Lotito (G8WTHAZ3PU)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jason Lotito (G8WTHAZ3PU)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -398,6 +462,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "A0A59FE3-BFAB-4FBF-9934-DF5A59C4AD3D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A0A59FE3-BFAB-4FBF-9934-DF5A59C4AD3D";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -415,7 +480,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Jason Lotito (G8WTHAZ3PU)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jason Lotito (G8WTHAZ3PU)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -424,6 +489,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "A0A59FE3-BFAB-4FBF-9934-DF5A59C4AD3D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A0A59FE3-BFAB-4FBF-9934-DF5A59C4AD3D";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

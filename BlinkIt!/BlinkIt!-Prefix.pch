@@ -40,7 +40,7 @@
                             [tableView endUpdates]; \
                             [tableView reloadData];
 
-#define BASE_URL @"http://192.168.1.15:12345"
+#define BASE_URL @"http://192.168.110.13:12345"
 
 #define COLOR_LOGO_GREEN [UIColor colorWithRed:26/255.0f green:188/255.0f blue:156/255.0f alpha:1.0f]
 #define COLOR_LOGO_GREEN_DARK [UIColor colorWithRed:22/255.0f green:160/255.0f blue:133/255.0f alpha:1.0f]
